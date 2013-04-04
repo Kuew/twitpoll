@@ -3,7 +3,9 @@ $(document).ready(function() {
     function format(n) {
         var nstr = [];
         while (n > 1000) {
-            nstr.unshift(n % 1000);
+            var d = "000" + (n % 1000);
+            d = d.substr(d.length - 3, 3);
+            nstr.unshift(d);
             n = n / 1000 | 0;
         }
         if (n != 0)
