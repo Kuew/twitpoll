@@ -9,9 +9,9 @@ body {
     width: 960px;
     background-color: #FFFFFF;
 }
-h1 {
+h1, h2 {
     margin: 0 20px;
-    padding: 20px 0;
+    padding: 1em 0;
 }
 p {
     margin: 0 20px;
