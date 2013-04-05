@@ -9,9 +9,14 @@ body {
     width: 960px;
     background-color: #FFFFFF;
 }
-h1, h2 {
+h1 {
     margin: 0 20px;
-    padding: 1em 0;
+    padding: .75em 0;
+}
+h2 {
+    margin: .75em 0 0 0;
+    padding: .75em 0 .5em 0;
+    border-top: 1px solid #AAAAAA;
 }
 p {
     margin: 0 20px;

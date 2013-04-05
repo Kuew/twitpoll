@@ -1,5 +1,3 @@
 *.py[co]
-parties.json
-leaders.json
-youth.json
+*.json
 
