@@ -13,7 +13,7 @@ parties = {
     #"theSNP": {"name": "Scottish National Party", "abbr": "SNP", "color": "#FFF95D"},
     "ukipwales": {"name": "UK Independence Party (Wales)", "abbr": "UKIP", "color": "#A54396"},
     #"sinnfeinireland": {"name": "Sinn Féin", "abbr": "SF", "color": "#00857D"},
-    "Plaid_Cymru": {"name": "Plaid Cyrmu", "abbr": "PLAID", "color": "#3F8428"},
+    "Plaid_Cymru": {"name": "Plaid Cymru", "abbr": "PLAID", "color": "#3F8428"},
     #"JimAllister": {"name": "Traditional Unionist Voice", "abbr": "TUV", "color": "#23116F"},
     #"duponline": {"name": "Democratic Unionist Party", "abbr": "DUP", "color": "#E7E7E8"},
     #"allianceparty": {"name": "Alliance Party", "abbr": "ALL", "color": "#000000"},
