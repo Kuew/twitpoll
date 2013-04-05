@@ -1,11 +1,12 @@
+<!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
 <title>TwitPoll - if followers were voters, how would they vote?</title>
 <link rel="stylesheet" href="twitpoll.css">
-<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
+<!--link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" /-->
 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.min.js"></script>
+<!--script src="http://code.jquery.com/ui/1.10.2/jquery-ui.min.js"></script-->
 <script src="raphael-min.js"></script>
 <script src="g.raphael-min.js"></script>
 <script src="g.pie-min.js"></script>
@@ -37,34 +38,19 @@
     public interest in online communication from each party.
     </p>
 
-    <div class="tabs">
-        <ul>
-            <li><a href="#uk">UK</a></li>
-            <li><a href="#cymru">Wales</a></li>
-            <li><a href="#scot">Scotland</a></li>
-            <li><a href="#ni">Northern Ireland</a></li>
-        </ul>
-        <div id="uk">
-            <h2>The Parties</h2>
-            <div id="parties"></div>
-            <h2>The Leaders</h2>
-            <div id="leaders"></div>
-            <h2>The Youth</h2>
-            <div id="youth"></div>
-        </div>
-        <div id="cymru">
-            <h2>The Parties</h2>
-            <div id="parties_cymru"></div>
-        </div>
-        <div id="scot">
-            <h2>The Parties</h2>
-            <div id="parties_scot"></div>
-        </div>
-        <div id="ni">
-            <h2>The Parties</h2>
-            <div id="parties_ni"></div>
-        </div>
+    <div style="margin:20px 20px 0 20px">
+        <strong>UK</strong> |
+        <a href="/cymru.html">Wales</a> |
+        <a href="/scotland.html">Scotland</a> |
+        <a href="/ni.html">Northern Ireland</a>
     </div>
+
+    <h2>The Parties</h2>
+    <div id="parties"></div>
+    <h2>The Leaders</h2>
+    <div id="leaders"></div>
+    <h2>The Youth</h2>
+    <div id="youth"></div>
 
     <div style="position:absolute;top:25px;right:0">
         <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://twitpoll.org.uk/" data-text="TwitPoll - if followers were voters, how would they vote?" data-via="NigelAlanSmall" data-size="large" data-hashtags="TwitPoll">Tweet</a>
@@ -79,12 +65,6 @@
 drawChart("parties");
 drawChart("leaders");
 drawChart("youth");
-drawChart("parties_cymru");
-drawChart("parties_scot");
-drawChart("parties_ni");
-$(function() {
-    $(".tabs").tabs();
-});
 </script>
 </body>
 </html>
