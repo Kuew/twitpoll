@@ -63,7 +63,7 @@ function drawChart(name) {
             "href": urls,
             "init": false,
             "legend": legend,
-            "minPercent": 0.01
+            "minPercent": 0.499
         });
         
     });
