@@ -24,7 +24,7 @@ parties = {
     #"GreenPartyNI": {"name": "Green Party in Northern Ireland", "abbr": "GPNI", "color": "#3053B3"},
     #"RespectPartyUK": {"name": "Respect Party", "abbr": "RES", "color": "#555555"},
     "TheBordersParty": {"name": "Borders Party", "abbr": "BORD", "color": "#555555"},
-    "communist_party": {"name": "Communist Party of Scotland", "abbr": "COMM", "color": "#4C0F0F"},
+    #"communist_party": {"name": "Communist Party of Scotland", "abbr": "COMM", "color": "#4C0F0F"},
     "The_SSP_": {"name": "Scottish Socialist Party", "abbr": "SSP", "color": "#ED741B"},
     "Scottishvoice1": {"name": "Scottish Voice", "abbr": "SVOI", "color": "#555555"},
     "scotprogressive": {"name": "Scottish Progressives", "abbr": "SPRO", "color": "#631844"},
