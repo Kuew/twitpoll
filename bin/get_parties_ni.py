@@ -6,9 +6,9 @@ import requests
 import sys
 
 parties = {
-    "NI_Conservative": {"name": "Conservative Party (NI)", "abbr": "CON", "color": "#0086DC"},
-    "LabourPartyNI": {"name": "Labour Party (NI)", "abbr": "LAB", "color": "#B70504"},
-    "libdemsni": {"name": "Liberal Democrats (NI)", "abbr": "LD", "color": "#FDBB30"},
+    "NI_Conservative": {"name": "Conservative Party", "abbr": "CON", "color": "#0086DC"},
+    "LabourPartyNI": {"name": "Labour Party", "abbr": "LAB", "color": "#B70504"},
+    "libdemsni": {"name": "Liberal Democrats", "abbr": "LD", "color": "#FDBB30"},
     #"TheGreenParty": {"name": "Green Party", "abbr": "GP", "color": "#6AB023"},
     #"theSNP": {"name": "Scottish National Party", "abbr": "SNP", "color": "#FFF95D"},
     #"UKIP": {"name": "UK Independence Party", "abbr": "UKIP", "color": "#A54396"},

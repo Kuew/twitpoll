@@ -6,12 +6,12 @@ import requests
 import sys
 
 parties = {
-    "WelshConserv": {"name": "Conservative Party (Wales)", "abbr": "CON", "color": "#0086DC"},
-    "welshlabour": {"name": "Labour Party (Wales)", "abbr": "LAB", "color": "#B70504"},
-    "WelshLibDems": {"name": "Liberal Democrats (Wales)", "abbr": "LD", "color": "#FDBB30"},
-    "WalesGreenParty": {"name": "Green Party (Wales)", "abbr": "GP", "color": "#6AB023"},
+    "WelshConserv": {"name": "Conservative Party", "abbr": "CON", "color": "#0086DC"},
+    "welshlabour": {"name": "Labour Party", "abbr": "LAB", "color": "#B70504"},
+    "WelshLibDems": {"name": "Liberal Democrats", "abbr": "LD", "color": "#FDBB30"},
+    "WalesGreenParty": {"name": "Green Party", "abbr": "GP", "color": "#6AB023"},
     #"theSNP": {"name": "Scottish National Party", "abbr": "SNP", "color": "#FFF95D"},
-    "ukipwales": {"name": "UK Independence Party (Wales)", "abbr": "UKIP", "color": "#A54396"},
+    "ukipwales": {"name": "UK Independence Party", "abbr": "UKIP", "color": "#A54396"},
     #"sinnfeinireland": {"name": "Sinn Féin", "abbr": "SF", "color": "#00857D"},
     "Plaid_Cymru": {"name": "Plaid Cymru", "abbr": "PLAID", "color": "#3F8428"},
     #"JimAllister": {"name": "Traditional Unionist Voice", "abbr": "TUV", "color": "#23116F"},

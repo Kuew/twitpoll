@@ -57,7 +57,7 @@ function drawChart(name) {
                 data2[colour]["user"]["followers_count"] += party["user"]["followers_count"];
             });
             $.each(data2, function(colour, blob) {
-                data2[colour]["name"] += " (" + data2[colour]["screen_names"].join("/") + ")";
+                data2[colour]["name"] += " (" + data2[colour]["screen_names"].join(" + ") + ")";
             });
             data = data2;
         }
@@ -66,7 +66,11 @@ function drawChart(name) {
         var parties = [], values = [], legend = [], colors = [], urls = [];
         $.each(data, function(key, party) {
             var followers = party["user"]["followers_count"];
-            legend.push(this["name"] + " - " + format(followers) + " (" + percentage(followers, totalFollowers) + ")");
+            if (grouped) {
+                legend.push(this["name"] + " - " + format(followers) + " (" + percentage(followers, totalFollowers) + ")");
+            } else {
+                legend.push(this["name"] + " (@" + key + ") - " + format(followers) + " (" + percentage(followers, totalFollowers) + ")");
+            }
             values.push(followers);
             party["screen_name"] = key;
             if (parties.length == 0) {
@@ -94,7 +98,7 @@ function drawChart(name) {
         });
         
         var r = Raphael(name, 960, 320);
-        r.piechart(240, 160, 150, values, {
+        r.piechart(200, 160, 150, values, {
             "colors": colors,
             "href": urls,
             "init": false,
