@@ -22,6 +22,8 @@ function drawChart(name) {
 
     $.getJSON("data/" + name + ".json", function(data) {
 
+        var text = "";
+
         var colourTotals = {}, grouped = false;
         $.each(data, function(key, party) {
             var colour = party["color"];
@@ -46,6 +48,7 @@ function drawChart(name) {
                 if (!(colour in data2)) {
                     data2[colour] = {
                         "name": party["name"],
+                        "abbr": party["abbr"],
                         "screen_names": [],
                         "color": colour,
                         "user": {
@@ -66,6 +69,7 @@ function drawChart(name) {
         var parties = [], values = [], legend = [], colors = [], urls = [];
         $.each(data, function(key, party) {
             var followers = party["user"]["followers_count"];
+            this["pc"] = percentage(followers, totalFollowers);
             if (grouped) {
                 legend.push(this["name"] + " - " + format(followers) + " (" + percentage(followers, totalFollowers) + ")");
             } else {
@@ -91,12 +95,13 @@ function drawChart(name) {
         });
         
         $.each(parties, function() {
+            text += this["abbr"] + " " + this["pc"] + " ";
             colors.push(this["color"]);
             if (!grouped) {
                 urls.push("https://twitter.com/" + this["screen_name"]);
             }
         });
-        
+
         Raphael.g.txtattr = { font: '10px Verdana, sans-serif', fill: '#fff' };
         var r = Raphael(name, 960, 320);
         r.piechart(180, 160, 140, values, {
@@ -106,6 +111,8 @@ function drawChart(name) {
             "legend": legend,
             "minPercent": 0.499
         });
+        
+        document.getElementById(name + "_text").value = text;
         
     });
 

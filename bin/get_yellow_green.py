@@ -13,8 +13,8 @@ parties = {
 
     "TheGreenParty": {"name": "Green Party", "abbr": "GP", "color": "#6AB023"},
     "WalesGreenParty": {"name": "Green Party", "abbr": "GP", "color": "#6AB023"},
-    "scotgp": {"name": "Green Party", "abbr": "SGP", "color": "#6AB023"},
-    "GreenPartyNI": {"name": "Green Party", "abbr": "GPNI", "color": "#6AB023"},
+    "scotgp": {"name": "Green Party", "abbr": "GP", "color": "#6AB023"},
+    "GreenPartyNI": {"name": "Green Party", "abbr": "GP", "color": "#6AB023"},
 }
 
 uri = "https://api.twitter.com/1/users/lookup.json?screen_name=" + ",".join(parties.keys())

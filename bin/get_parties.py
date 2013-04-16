@@ -23,8 +23,8 @@ parties = {
 
     "TheGreenParty": {"name": "Green Party", "abbr": "GP", "color": "#6AB023"},
     "WalesGreenParty": {"name": "Green Party", "abbr": "GP", "color": "#6AB023"},
-    "scotgp": {"name": "Green Party", "abbr": "SGP", "color": "#6AB023"},
-    "GreenPartyNI": {"name": "Green Party", "abbr": "GPNI", "color": "#6AB023"},
+    "scotgp": {"name": "Green Party", "abbr": "GP", "color": "#6AB023"},
+    "GreenPartyNI": {"name": "Green Party", "abbr": "GP", "color": "#6AB023"},
 
     "UKIP": {"name": "UK Independence Party", "abbr": "UKIP", "color": "#A54396"},
     "ukipwales": {"name": "UK Independence Party", "abbr": "UKIP", "color": "#A54396"},
