@@ -57,7 +57,7 @@ function drawChart(name) {
                 data2[colour]["user"]["followers_count"] += party["user"]["followers_count"];
             });
             $.each(data2, function(colour, blob) {
-                data2[colour]["name"] += " (" + data2[colour]["screen_names"].join(" + ") + ")";
+                data2[colour]["name"] += " (" + data2[colour]["screen_names"].join(" ") + ")";
             });
             data = data2;
         }
@@ -97,8 +97,9 @@ function drawChart(name) {
             }
         });
         
+        Raphael.g.txtattr = { font: '10px Verdana, sans-serif', fill: '#fff' };
         var r = Raphael(name, 960, 320);
-        r.piechart(200, 160, 150, values, {
+        r.piechart(180, 160, 140, values, {
             "colors": colors,
             "href": urls,
             "init": false,

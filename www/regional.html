@@ -42,15 +42,29 @@
     </p>
 
     <div style="margin:20px 20px 0 20px">
-        <a href="/">UK</a> |
-        <a href="/cymru">Wales</a> |
-        <strong>Scotland</strong> |
-        <a href="/ni">Northern Ireland</a> |
-        <a href="/yellow-green">Yellow-Green split</a>
+        <a href=".">Overall</a> |
+        <strong>Regional</strong> |
+        <a href="splits">Splits</a>
     </div>
 
-    <h2>The Parties</h2>
+    <h2>Wales</h2>
+    <div id="parties_cymru"></div>
+
+    <div style="position:absolute;top:25px;right:0">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://twitpoll.org.uk/" data-text="TwitPoll - if followers were voters, how would they vote?" data-via="NigelAlanSmall" data-size="large" data-hashtags="TwitPoll">Tweet</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </div>
+
+    <h2>Scotland</h2>
     <div id="parties_scot"></div>
+
+    <div style="position:absolute;top:25px;right:0">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://twitpoll.org.uk/" data-text="TwitPoll - if followers were voters, how would they vote?" data-via="NigelAlanSmall" data-size="large" data-hashtags="TwitPoll">Tweet</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </div>
+
+    <h2>Northern Ireland</h2>
+    <div id="parties_ni"></div>
 
     <div style="position:absolute;top:25px;right:0">
         <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://twitpoll.org.uk/" data-text="TwitPoll - if followers were voters, how would they vote?" data-via="NigelAlanSmall" data-size="large" data-hashtags="TwitPoll">Tweet</a>
@@ -62,7 +76,9 @@
 </div>
 
 <script>
+drawChart("parties_cymru");
 drawChart("parties_scot");
+drawChart("parties_ni");
 </script>
 </body>
 </html>

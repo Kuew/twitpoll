@@ -7,9 +7,12 @@ import sys
 
 parties = {
     "LibDems": {"name": "Liberal Democrats", "abbr": "LD", "color": "#FDBB30"},
+    "WelshLibDems": {"name": "Liberal Democrats", "abbr": "LD", "color": "#FDBB30"},
     "scotlibdems": {"name": "Liberal Democrats", "abbr": "LD", "color": "#FDBB30"},
     "libdemsni": {"name": "Liberal Democrats", "abbr": "LD", "color": "#FDBB30"},
+
     "TheGreenParty": {"name": "Green Party", "abbr": "GP", "color": "#6AB023"},
+    "WalesGreenParty": {"name": "Green Party", "abbr": "GP", "color": "#6AB023"},
     "scotgp": {"name": "Green Party", "abbr": "SGP", "color": "#6AB023"},
     "GreenPartyNI": {"name": "Green Party", "abbr": "GPNI", "color": "#6AB023"},
 }

@@ -42,15 +42,35 @@
     </p>
 
     <div style="margin:20px 20px 0 20px">
-        <a href="/">UK</a> |
-        <a href="/cymru">Wales</a> |
-        <a href="/scotland">Scotland</a> |
-        <strong>Northern Ireland</strong> |
-        <a href="/yellow-green">Yellow-Green split</a>
+        <a href=".">Overall</a> |
+        <a href="regional">Regional</a> |
+        <strong>Splits</strong>
     </div>
 
-    <h2>The Parties</h2>
-    <div id="parties_ni"></div>
+    <h2>Blue-Red Split</h2>
+
+    <p>The blue-red split shows the balance between Conservative and 
+    Labour Party followers. The total followers for each party are drawn from
+    four accounts: the main account, the Welsh account, the Scottish account
+    and the account for Northern Ireland.
+    </p>
+
+    <div id="blue_red"></div>
+
+    <div style="position:absolute;top:25px;right:0">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://twitpoll.org.uk/" data-text="TwitPoll - if followers were voters, how would they vote?" data-via="NigelAlanSmall" data-size="large" data-hashtags="TwitPoll">Tweet</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </div>
+
+    <h2>Yellow-Green Split</h2>
+
+    <p>The yellow-green split shows the balance between Liberal Democrat and 
+    Green Party followers. The total followers for each party are drawn from
+    four accounts: the main account, the Welsh account, the Scottish account
+    and the account for Northern Ireland.
+    </p>
+
+    <div id="yellow_green"></div>
 
     <div style="position:absolute;top:25px;right:0">
         <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://twitpoll.org.uk/" data-text="TwitPoll - if followers were voters, how would they vote?" data-via="NigelAlanSmall" data-size="large" data-hashtags="TwitPoll">Tweet</a>
@@ -62,7 +82,8 @@
 </div>
 
 <script>
-drawChart("parties_ni");
+drawChart("blue_red");
+drawChart("yellow_green");
 </script>
 </body>
 </html>
