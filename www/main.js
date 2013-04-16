@@ -22,14 +22,43 @@ function drawChart(name) {
 
     $.getJSON("data/" + name + ".json", function(data) {
 
-        var totalFollowers = 0;
+        var colourTotals = {}, grouped = false;
+        $.each(data, function(key, party) {
+            var colour = party["color"];
+            if (colour in colourTotals) {
+                colourTotals[colour] += party["user"]["followers_count"];
+                grouped = true;
+            } else {
+                colourTotals[colour] = party["user"]["followers_count"];
+            }
+        });
 
+        // add up total followers
+        var totalFollowers = 0;
         $.each(data, function(key, party) {
             totalFollowers += party["user"]["followers_count"];
         });
-    
+
+        if (grouped) {
+            var data2 = {};
+            $.each(data, function(key, party) {
+                var colour = party["color"];
+                if (!(colour in data2)) {
+                    data2[colour] = {
+                        "name": party["name"],
+                        "color": colour,
+                        "user": {
+                            "followers_count": 0
+                        }
+                    };
+                }
+                data2[colour]["user"]["followers_count"] += party["user"]["followers_count"];
+            });
+            data = data2;
+        }
+
+        // extract values
         var parties = [], values = [], legend = [], colors = [], urls = [];
-        
         $.each(data, function(key, party) {
             var followers = party["user"]["followers_count"];
             legend.push(this["name"] + " - " + format(followers) + " (" + percentage(followers, totalFollowers) + ")");
@@ -54,7 +83,7 @@ function drawChart(name) {
         
         $.each(parties, function() {
             colors.push(this["color"]);
-            urls.push(this["user"]["url"]);
+            urls.push("https://twitter.com/" + this["screen_name"]);
         });
         
         var r = Raphael(name, 960, 320);
