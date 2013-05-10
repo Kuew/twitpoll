@@ -13,3 +13,5 @@ python $TWITPOLL/bin/get_parties_ni.py > $TWITPOLL/www/data/parties_ni.json
 python $TWITPOLL/bin/get_blue_red.py > $TWITPOLL/www/data/blue_red.json
 python $TWITPOLL/bin/get_yellow_green.py > $TWITPOLL/www/data/yellow_green.json
 
+python $TWITPOLL/bin/get_purple_parody.py > $TWITPOLL/www/data/purple_parody.json
+
