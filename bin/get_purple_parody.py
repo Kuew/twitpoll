@@ -7,7 +7,7 @@ import sys
 
 parties = {
     "UKIP": {"name": "UK Independence Party", "abbr": "UKIP", "color": "#A54396"},
-    "UkipTips": {"name": "UkipTips", "abbr": "TIPS", "color": "#F1E830"},
+    "UpikTips": {"name": "UpikTips", "abbr": "TIPS", "color": "#F1E830"},
 }
 
 uri = "https://api.twitter.com/1/users/lookup.json?screen_name=" + ",".join(parties.keys())
